@@ -1,3 +1,25 @@
+# Miscellaneous system files
+.DS_Store
+*~
+._*
+.env
+Thumbs.db
+
+# Editor files
+.vs/
+.vscode/
+.idea/
+cmake-build-*/
+*.code-workspace
+*.swp
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+CMakeSettings.json
+
+# Build output
+build*/
+*.zip
+
 # Prerequisites
 *.d
 
@@ -50,3 +72,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# 3DS file formats
+*.3dsx
+*.cia
+*.cxi
+*.smdh
