@@ -42,7 +42,7 @@ LD_SHARED_LIBRARY_FLAGS := --shared \
 CC_FLAGS := -g -fPIC -fexceptions -fuse-ld=lld -fstack-protector-strong -O3 -mfloat-abi=hard -mtp=soft -target arm-none-linux-gnu -nostdlib -nostdlibinc $(SYS_INCLUDES) -D_3DS=1 -Wno-unused-command-line-argument
 CXX_FLAGS := $(CPP_INCLUDES) $(CC_FLAGS) -std=c++17 -stdlib=libc++ -nodefaultlibs -nostdinc++
 AR_FLAGS := rcs
-AS_FLAGS := -arch=arm -triple arm-none-3ds
+AS_FLAGS := -arch=arm -triple arm-3ds-eabi
 
 # compatibility
 CFLAGS := $(CC_FLAGS)
